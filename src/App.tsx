@@ -194,7 +194,7 @@ function App() {
                     <h3 className="card-title">{t("project-1-name")}</h3>
                     <p className="text-muted flex-grow-1">{t("project-1-desc")}</p>
                     <div className="mt-auto pt-3 border-top">
-                      <a href="#" className="project-link">{t("link-view")}</a>
+                      <a href="https://shk-info.de/" className="project-link">{t("link-view")}</a>
                     </div>
                   </div>
                 </FadeInSection>
@@ -209,7 +209,7 @@ function App() {
                     <h3 className="card-title">{t("project-2-name")}</h3>
                     <p className="text-muted flex-grow-1">{t("project-2-desc")}</p>
                     <div className="mt-auto pt-3 border-top">
-                      <a href="#" className="project-link">{t("link-view")}</a>
+                      <a href="https://heizreport.dev/map.html" className="project-link">{t("link-view")}</a>
                     </div>
                   </div>
                 </FadeInSection>
@@ -224,7 +224,7 @@ function App() {
                     <h3 className="card-title">{t("project-3-name")}</h3>
                     <p className="text-muted flex-grow-1">{t("project-3-desc")}</p>
                     <div className="mt-auto pt-3 border-top">
-                      <a href="#" className="project-link">{t("link-view")}</a>
+                      <a href="https://heizreport.dev/webapp.html" className="project-link">{t("link-view")}</a>
                     </div>
                   </div>
                 </FadeInSection>
@@ -244,27 +244,27 @@ function App() {
                       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                       <span>{t("github-1")}</span>
                     </h5>
-                    <small className="text-muted border rounded px-2 py-1">Go</small>
+                    <small className="text-muted border rounded px-2 py-1">NestJs</small>
                   </div>
                   <p className="mb-0 text-muted">{t("github-1-desc")}</p>
                 </a>
-                <a href="https://github.com/alexshmidt/react-dynamic-dashboard" target="_blank" className="list-group-item list-group-item-action p-4 border-light shadow-sm mb-3 rounded">
+                <a href="https://github.com/AlexKovalovSHK/go-ai-chat-desctop-mcp" target="_blank" className="list-group-item list-group-item-action p-4 border-light shadow-sm mb-3 rounded">
                   <div className="d-flex w-100 justify-content-between align-items-center mb-2">
                     <h5 className="mb-1 text-primary d-flex align-items-center gap-2">
                       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                       <span>{t("github-2")}</span>
                     </h5>
-                    <small className="text-muted border rounded px-2 py-1">TypeScript</small>
+                    <small className="text-muted border rounded px-2 py-1">Go</small>
                   </div>
                   <p className="mb-0 text-muted">{t("github-2-desc")}</p>
                 </a>
-                <a href="https://github.com/alexshmidt/nestjs-auth-boilerplate" target="_blank" className="list-group-item list-group-item-action p-4 border-light shadow-sm mb-0 rounded">
+                <a href="https://github.com/AlexKovalovSHK/js-vanile-extands-translator" target="_blank" className="list-group-item list-group-item-action p-4 border-light shadow-sm mb-0 rounded">
                   <div className="d-flex w-100 justify-content-between align-items-center mb-2">
                     <h5 className="mb-1 text-primary d-flex align-items-center gap-2">
                       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                       <span>{t("github-3")}</span>
                     </h5>
-                    <small className="text-muted border rounded px-2 py-1">TypeScript</small>
+                    <small className="text-muted border rounded px-2 py-1">VanillaJS</small>
                   </div>
                   <p className="mb-0 text-muted">{t("github-3-desc")}</p>
                 </a>
@@ -283,16 +283,16 @@ function App() {
 
                   <div className="d-flex flex-column gap-3 mb-4">
                     <a href="mailto:alex@example.com" className="text-decoration-none text-body">
-                      <strong className="text-primary me-2">Email:</strong> alex@example.com
+                      <strong className="text-primary me-2">Email:</strong> al.k.84.de@gmail.com
                     </a>
-                    <a href="https://t.me/alexshmidt" className="text-decoration-none text-body" target="_blank">
-                      <strong className="text-primary me-2">Telegram:</strong> @alexshmidt
+                    <a href="https://t.me/alex84_k" className="text-decoration-none text-body" target="_blank">
+                      <strong className="text-primary me-2">Telegram:</strong> @@alex84_k
                     </a>
-                    <a href="https://github.com/alexshmidt" className="text-decoration-none text-body" target="_blank">
-                      <strong className="text-primary me-2">GitHub:</strong> github.com/alexshmidt
+                    <a href="https://github.com/AlexKovalovSHK" className="text-decoration-none text-body" target="_blank">
+                      <strong className="text-primary me-2">GitHub:</strong> https://github.com/AlexKovalovSHK
                     </a>
-                    <a href="https://linkedin.com/in/alexshmidt" className="text-decoration-none text-body" target="_blank">
-                      <strong className="text-primary me-2">LinkedIn:</strong> linkedin.com/in/alexshmidt
+                    <a href="https://www.linkedin.com/in/alex-kovalov-developer" className="text-decoration-none text-body" target="_blank">
+                      <strong className="text-primary me-2">LinkedIn:</strong> linkedin.com/in/alex-kovalov-developer
                     </a>
                   </div>
                 </div>
