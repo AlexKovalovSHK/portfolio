@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  web:
+    image: portfolio_react:latest
+    container_name: portfolio_react
+    ports:
+      - "5501:80"
+    restart: unless-stopped
