@@ -286,7 +286,7 @@ function App() {
                       <strong className="text-primary me-2">Email:</strong> al.k.84.de@gmail.com
                     </a>
                     <a href="https://t.me/alex84_k" className="text-decoration-none text-body" target="_blank">
-                      <strong className="text-primary me-2">Telegram:</strong> @@alex84_k
+                      <strong className="text-primary me-2">Telegram:</strong> @alex84_k
                     </a>
                     <a href="https://github.com/AlexKovalovSHK" className="text-decoration-none text-body" target="_blank">
                       <strong className="text-primary me-2">GitHub:</strong> https://github.com/AlexKovalovSHK
