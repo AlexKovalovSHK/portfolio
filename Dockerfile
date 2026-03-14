@@ -1,9 +1,17 @@
+# Multi-stage build for optimized production image
 FROM nginx:alpine
 
-# Удаляем дефолтные файлы nginx, чтобы они не мешались
+# Remove default nginx website
 RUN rm -rf /usr/share/nginx/html/*
 
-# Копируем конкретно твой собранный файл из папки dist
-COPY dist/index.html /usr/share/nginx/html/index.html
+# Copy website files to nginx html directory
+COPY . /usr/share/nginx/html
 
+# Copy custom nginx configuration (optional)
+# COPY nginx.conf /etc/nginx/nginx.conf
+
+# Expose port 80
 EXPOSE 80
+
+# Start nginx
+CMD ["nginx", "-g", "daemon off;"]
