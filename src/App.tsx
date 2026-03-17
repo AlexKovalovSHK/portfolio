@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import type { FormEvent } from 'react';
 import { translations, type Lang } from './utils';
 import avatarImg from './assets/avatar.jpg';
-
+import DownloadFilesModal from './modals/DownloadFilesModal';
 
 
 const FadeInSection = ({ children, delay = 0 }: { children: React.ReactNode, delay?: number }) => {
@@ -30,6 +30,7 @@ const FadeInSection = ({ children, delay = 0 }: { children: React.ReactNode, del
 
 function App() {
   const [lang, setLang] = useState<Lang>('en');
+  const [showDownloadModal, setShowDownloadModal] = useState(false);
 
   useEffect(() => {
     const savedLang = localStorage.getItem('appLang') as Lang;
@@ -88,6 +89,18 @@ function App() {
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#contact">{t("nav-contact")}</a>
+              </li>
+              <li className="nav-item">
+                <a
+                  className="nav-link"
+                  href="#"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setShowDownloadModal(true);
+                  }}
+                >
+                  Download files
+                </a>
               </li>
 
               <li className="nav-item ms-lg-4 mt-3 mt-lg-0 border-start ps-lg-3 d-flex">
@@ -248,7 +261,7 @@ function App() {
                   </div>
                   <p className="mb-0 text-muted">{t("github-1-desc")}</p>
                 </a>
-                <a href="https://github.com/AlexKovalovSHK/go-ai-chat-desctop-mcp" target="_blank" className="list-group-item list-group-item-action p-4 border-light shadow-sm mb-3 rounded">
+                <a href="https://github.com/AlexKovalovSHK/go_p2p_messenger"   target="_blank" className="list-group-item list-group-item-action p-4 border-light shadow-sm mb-3 rounded">
                   <div className="d-flex w-100 justify-content-between align-items-center mb-2">
                     <h5 className="mb-1 text-primary d-flex align-items-center gap-2">
                       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
@@ -258,16 +271,27 @@ function App() {
                   </div>
                   <p className="mb-0 text-muted">{t("github-2-desc")}</p>
                 </a>
-                <a href="https://github.com/AlexKovalovSHK/js-vanile-extands-translator" target="_blank" className="list-group-item list-group-item-action p-4 border-light shadow-sm mb-0 rounded">
+                <a href="https://github.com/AlexKovalovSHK/go-ai-chat-desctop-mcp" target="_blank" className="list-group-item list-group-item-action p-4 border-light shadow-sm mb-3 rounded">
                   <div className="d-flex w-100 justify-content-between align-items-center mb-2">
                     <h5 className="mb-1 text-primary d-flex align-items-center gap-2">
                       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
                       <span>{t("github-3")}</span>
                     </h5>
-                    <small className="text-muted border rounded px-2 py-1">VanillaJS</small>
+                    <small className="text-muted border rounded px-2 py-1">Go</small>
                   </div>
                   <p className="mb-0 text-muted">{t("github-3-desc")}</p>
                 </a>
+                <a href="https://github.com/AlexKovalovSHK/js-vanile-extands-translator" target="_blank" className="list-group-item list-group-item-action p-4 border-light shadow-sm mb-0 rounded">
+                  <div className="d-flex w-100 justify-content-between align-items-center mb-2">
+                    <h5 className="mb-1 text-primary d-flex align-items-center gap-2">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                      <span>{t("github-4")}</span>
+                    </h5>
+                    <small className="text-muted border rounded px-2 py-1">VanillaJS</small>
+                  </div>
+                  <p className="mb-0 text-muted">{t("github-4-desc")}</p>
+                </a>
+                
               </div>
             </FadeInSection>
           </div>
@@ -325,6 +349,11 @@ function App() {
           <p className="mb-0 text-muted">{t("footer-text")}</p>
         </div>
       </footer>
+
+      <DownloadFilesModal
+  show={showDownloadModal}
+  onHide={() => setShowDownloadModal(false)}
+/>
     </>
   );
 }
